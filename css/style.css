@@ -1,0 +1,12 @@
+*{
+    font-size: 14px;
+}
+
+.page-bg {
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 1227px;
+}
