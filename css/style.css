@@ -10,7 +10,8 @@
 .hero__mobileimg-big,
 .about__descr-desctop,
 .block__info-descr-desctop,
-.featur__blockdescr-desctop{
+.featur__blockdescr-desctop,
+.checkout__descr-desctop{
   display: none;
 }
 .menu__bg {
@@ -981,7 +982,8 @@
   text-transform: uppercase;
   color: #232233;
 }
-.checkout__descr {
+.checkout__descr,
+.checkout__descr-desctop{
   margin: 10px auto 0;
   width: 280px;
   height: 70px;
@@ -1051,7 +1053,28 @@
   padding-top: 9px;
   /* padding-left: 7px; */
 }
-/* section checkout start */
+
+@media (min-width: 768px){
+
+  .checkout__descr {
+    display: none;
+  }
+
+  .checkout__descr-desctop{
+    display: block;
+    width: 450px;
+    height: 70px;
+  }
+
+  .checkout__title{
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 151%;
+    width: 360px;
+    height: 95px;
+  }
+}
+/* section checkout end */
 
 /* section download start */
 
