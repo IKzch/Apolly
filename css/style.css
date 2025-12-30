@@ -107,6 +107,7 @@
 @media (min-width: 768px){
 .menu__bg {
     min-width: 768px;
+    min-height: 785px;
 }
 .menu__wrapper {
     min-width: 688px;
@@ -380,7 +381,7 @@
   }
   .menu__bg {
     background-image: url("../img/bg-768.jpg");
-    min-height: 1024px;
+    /* min-height: 1024px; */
     justify-content: start;
   }
 }
@@ -771,13 +772,24 @@
   .featur__block-descr{
     display: none;
   }
+  .features{
+    margin-top: 110px;
+    height: 10%;
+  }
   .features__bg{
     background-image: url("../img/bg1-middleb.png");
-    position: relative;
+    /* position: relative; */
     height: 1336px;
-    max-width: 768px;
+    width: 100%;
+    /* max-width: 768px; */
   }
-  .featur__block-title {
+  .features__container{
+    margin: 0 auto;
+    position: relative;
+    min-width: 768px;
+    height: 1336px;
+  }
+  .featur__block-app .featur__block-title {
     position: absolute;
     left: 34%;
     top: 0%;
@@ -795,17 +807,147 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 20%;
+    top: 24%;
+  }
+  .featur__block-freechat,
+  .featur__block-unlim, 
+  .featur__block-awesome,
+  .featur__block-version,
+  .featur__block-retina,
+  .featur__block-support {
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: 200px;  
   }
   .featur__block-freechat{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background-color: aqua;
-      top: 0;
-      left: 0;
+    top: 17%; 
+    left: 33%;
+  }
+  .featur__block-unlim{
+    top: 37%; 
+    left: 0;
+  }
+  .featur__block-awesome{
+    /* align-items: right; */
+    top: 53%; 
+    left: 0;
+  }
+  .featur__block-version{
+    top: 38%; 
+    left: 66%;
+  }
+  .featur__block-retina{
+    top: 52%; 
+    left: 66%;
+  }
+  .featur__block-support{
+    top: 72%; 
+    left: 33%;
+  }
+  .featur__block-unlim .featur__block-icon,
+  .featur__block-awesome .featur__block-icon {
+    background-position: right;
+    padding-left: 201px;
+  }
+  .featur__block-version .featur__block-icon{
+    background-position: left;
+    padding-right: 200px;
+  }
+  .featur__block-retina .featur__block-icon{
+    background-position: left;
+    padding-right: 158px;
+  }
+  .featur__block-freechat .featur__block-title,
+  .featur__block-unlim .featur__block-title,
+  .featur__block-awesome .featur__block-title,
+  .featur__block-version .featur__block-title,
+  .featur__block-retina .featur__block-title,
+  .featur__block-support .featur__block-title{
+    display: block;
+    margin: 20px auto 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+  }
+  .featur__block-unlim .featur__block-title,
+  .featur__block-awesome .featur__block-title{
+    text-align: right;
+  }
+  .featur__block-version .featur__block-title,
+  .featur__block-retina .featur__block-title{
+    text-align: left;
+  }
+  .featur__block-freechat .featur__block-descr,
+  .featur__block-unlim .featur__block-descr,
+  .featur__block-awesome .featur__block-descr,
+  .featur__block-version .featur__block-descr,
+  .featur__block-retina .featur__block-descr,
+  .featur__block-support .featur__block-descr{
+    display: block;
+    margin: 20px auto 0;
+  }
+  .featur__block-unlim .featur__block-descr,
+  .featur__block-awesome .featur__block-descr {
+    text-align: right;
+  }
+  .featur__block-version .featur__block-descr,
+  .featur__block-retina .featur__block-descr{
+    text-align: left;
+    padding-left: 10px;
+  }
+  .featur__block-support .featur__block-descr {
+    width: 250px;
+  }
+}
+
+@media (min-width: 1440px){
+  .features__bg {
+    background-image: url("../img/bg1-1440.png");
+    height: 1710px;
+    /* max-width: 1710px; */
+    width: 100%;
+  }
+  .features__container{
+    min-width: 1440px;
+    height: 1710px;
+  }
+  .appimg {
+    background-image: url("../img/app-1440.png");
+    width: 375px;
+    height: 812px;
+    top: 21%;
+  }
+  .featur__block-app .featur__block-title {
+    left: 41%;
+    margin-top: 40px;
+  } 
+  .featur__block-app .featur__blockdescr-desctop {
+    left: 34%;
+  }
+  .featur__block-freechat {
+    top: 14%;
+    left: 41%;
+  }
+  .featur__block-unlim {
+    top: 33%;
+    left: 15%;
+  }
+  .featur__block-version {
+    top: 34%;
+  }
+  .featur__block-awesome{
+    left: 15%;
+    top: 62%;
+  }
+  .featur__block-retina{
+    top: 62%;
+  }
+  .featur__block-support{
+    top: 80%;
+    left: 41%;
   }
 }
 /* section features end */
