@@ -6,7 +6,6 @@
 .info__top,
 .menu-1440-1,
 .menu-1440-2,
-.hero__mobileimg-big,
 .about__descr-desctop,
 .block__info-descr-desctop,
 .featur__blockdescr-desctop,
@@ -16,7 +15,9 @@
 .customers__descr-desctop,
 .team__item-about-sm,
 .customers__img-descr-desctop,
-.blog__descr-desctop{
+.blog__descr-desctop,
+.hero__rectangle-descr-desktop,
+.featur__blockdescrtitle-desctop{
   display: none;
 }
 .menu__bg {
@@ -202,9 +203,10 @@
   height: 18px;
 }
 .menu__wrapper {
-  margin-top: 50px;
+  margin-top: 31px;
 }
 .menu .menu__logo {
+  top: 18%;
   width: 200px;
   height: 90px;
 }
@@ -279,24 +281,20 @@
 
 /* section hero start*/
 
-.hero{
+/* .hero{
   display: flex;
-  /* position: relative; */
   justify-content: center;
-  /* flex-direction: column; */
   margin-top: 98px;
-  /* max-width: 343px; */
   height: 358px; 
-  /* background-color: red; */
-}
-.hero__rectangles-wrapper{
+} */
+/* .hero__rectangles-wrapper{
   display: flex;
   justify-content: center;
   position: relative;
   flex-direction: column;
   min-width: 343px;
   max-height: 358px;
-}
+} */
 .hero__rectangle-back{
   box-sizing: border-box;
   /* display: flex; */
@@ -361,16 +359,15 @@
   margin-top: 18px;
   margin-left: 18px;
 }
-.mobileimg{
-  /* margin: 40px auto 0; */
+/* .mobileimg{
   display: flex;
   justify-content:center;
   margin-top: 40px;
   margin-bottom: 40px;
   filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.25));
-}
+} */
 
-.hero1 {
+.hero {
   display: flex;
   /* position: relative; */
   justify-content: center;
@@ -381,14 +378,14 @@
   /* background-color: red; */
 }
 
-.hero1__wrapper{
+.hero__wrapper{
   display: flex;
   flex-direction: column;
   /* background-color:#6c6c71; */
   width: 375px;
   height: 965px;
 }
-.hero__rectangles-wrapper1{
+.hero__rectangles-wrapper{
   display: flex;
   justify-content: center;
   position: relative;
@@ -397,11 +394,11 @@
   height: 360px;
   /* background-color:#a7af60; */
 }
-.hero1__mobileapp-block{
+.hero__mobileapp-block{
   /* width: 466px; */
   height: 521px;
 }
-.hero1__mobileimg{
+.hero__mobileimg{
   /* margin: 20px auto 0; */
   display: flex;
   justify-content:center;
@@ -411,19 +408,93 @@
   filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.25));
 }
 
+.rect__icon-google{
+    background-image: url("../img/gplay.png");
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 35px;
+  }
+  .rect__icon-apple{
+    background-image: url("../img/appst.png");
+    background-repeat: no-repeat;
+    width: 114px;
+    height: 35px;
+  }
+
 
 @media (min-width: 768px) {
-  .mobileimg{
+
+  .hero{
+    min-width: 768px;
+  }
+  .hero__wrapper{
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 689px;
+    gap: 50px;
+    height: 690px;
+  }
+  .hero__rectangles-wrapper{
+    margin-top: 161px;
+    width: 391px;
+    height: 381px;
+  }
+  .hero__rectangle-back{
+    border: 18px solid #7572ff;
+    width: 375px;
+    height: 381px;
+  }
+  .hero__rectangle-front{
+    width: 356px;
+    height: 318px;
+    top: 31px;
+  }
+  .hero__rectangle-title{
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 151%;
+    text-transform: uppercase;
+    width: 331px;
+    height: 95px;
+    margin-top: 18px;
+  }
+  .hero__rectangle-descr{
+    width: 330px;
+    height: 66px;
+    margin-top: 5px;
+  }
+  .hero__rectangle-icons{
+    width: 314px;
+    height: 47px;
+  }
+  .rect__icon-google{
+    background-image: url("../img/gplayb.png");
+    background-repeat: no-repeat;
+    width: 149px;
+    height: 45px;
+  }
+  .rect__icon-apple{
+    background-image: url("../img/appstb.png");
+    background-repeat: no-repeat;
+    width: 153px;
+    height: 45px;
+  }
+
+
+
+
+
+  /* .mobileimg{
     display: none;
-  }
-  .hero__mobileimg-big{
+  } */
+  /* .hero__mobileimg-big{
     display: block;
-  }
-  .hero {
+  } */
+  /* .hero {
     flex-direction: row;
     gap: 55px;
     margin-top: 60px;
-  }
+  } */
   .info__top{
     margin-top: 20px;
   }
@@ -440,24 +511,52 @@
       min-height: 1024px;
       position: relative;
     }
-    .hero {
+    /* .hero {
       display: flex;
       min-width: 1171px;
       margin: 0 auto;
       justify-content: space-between;
       height: 660px;
       margin-top: 80px;
+    } */
+    .hero{
+      /* min-width: 1160px; */
+      height: 791px;
+
+    }
+    .hero__wrapper{
+      min-width: 1160px;
+      gap: 0;
+      height: 791px;
     }
     .hero__rectangles-wrapper{
+      width: 620px;
+      height: 535px;
+    }
+    .hero__rectangle-front{
+      left: 0;
+      width: 570px;
+      height: 432px;
+      top: 9%;
+    }
+    .hero__mobileapp-block{
+      width: 418px;
+    }
+
+
+
+
+
+    /* .hero__rectangles-wrapper{
       display: flex;
       justify-content: center;
       top: 7%;
       left: 22%;
-    }
-    .hero__mobileimg-big{
+    } */
+    /* .hero__mobileimg-big{
       display: flex;
       margin-right: 9%;
-    }
+    } */
     .info__top{
       margin-top: 35px;
     }
@@ -466,12 +565,12 @@
       min-height: 535px;
       border: 18px solid #7572FF;
     }
-    .hero__rectangle-front {
+    /* .hero__rectangle-front {
       width: 570px;
       height: 432px;
       left: -260px;
       top: 52px;
-    }
+    } */
     .hero__rectangle-title{
       width: 517px;
       height: 126px;
@@ -480,6 +579,7 @@
       line-height: 63px;
       text-transform: uppercase;
       color: #5956E9;
+      margin-top: 40px;
     }
     .hero__rectangle-descr{
       width: 487px;
@@ -488,6 +588,7 @@
       font-size: 16px;
       line-height: 24px;
       color: #6C6C72;
+      margin-top: 18px;
     }
     .hero__rectangle-downloadtext{
       width: 289px;
@@ -497,10 +598,12 @@
       line-height: 38px;
       text-transform: uppercase;
       color: #232233;
+      margin-top: 52px;
     }
     .hero__rectangle-icons{
       width: 314px;
       height: 47px;
+      margin-top: 5px;
     }
     .rect__icon-google img,
     .rect__icon-apple img{
@@ -517,6 +620,9 @@
       background-repeat: no-repeat;
       width: 152px;
       height: 47px;
+    }
+    .hero__rectangle-descr-desktop{
+      display: inline;
     }
 }
 
@@ -611,11 +717,12 @@
 }
 
 @media (min-width: 768px){
-  .about__descr{
+  /* .about__descr{
     display: none;
-  }
+  } */
   .about .about__descr-desctop {
-    display: block;
+    display: inline;
+    /* display: block; */
     margin: 25px auto 0;
     text-align: center;
     width: 450px;
@@ -647,13 +754,15 @@
 }
 
 @media (min-width: 1440px) {
-  .block__info-descr{
-    display: none;
+  .about .block__info-descr{
+    margin-top: 10px;
+    width: 488px;
+    height: 67px;
   }
-  .about__title {
-    /* font-size: 31px; */
-    /* line-height: 47.25px; */
-  }
+  /* .about__title {
+    font-size: 31px;
+    line-height: 47.25px;
+  } */
   .about__img{
     background-image: url("../img/about-imgb.jpg");
     width: 386px;
@@ -670,7 +779,8 @@
     margin-top: 20px;
   }
   .about .block__info-descr-desctop {
-    display: block;
+    display: inline;
+    /* display: block; */
     margin-top: 10px;
     width: 491px;
     height: 67px;
@@ -818,10 +928,26 @@
   width: 230px;
   text-align: center;
 }
+.featur__block-descrtitle{
+  width: 300px;
+  height: 70px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+}
 
 @media (min-width: 768px) {
-  .featur__block-descr{
-    display: none;
+  .featur__blockdescrtitle-desctop{
+    display: inline;
+  }
+  .featur__block-descrtitle{
+    position: absolute;
+    top:7%;
+    left: 21%;
+    width: 450px;
+    height: 70px;
   }
   .features{
     margin-top: 110px;
@@ -848,8 +974,9 @@
     font-size: 31px;
   }
   .featur__blockdescr-desctop{
-    display: block;
-    position: absolute;
+    display: inline;
+    /* display: block; */
+    /* position: absolute; */
     left: 22%;
     top: 6%;
     width: 450px;
@@ -964,6 +1091,12 @@
   .features__container{
     min-width: 1440px;
     height: 1710px;
+  }
+  .featur__block-descrtitle{
+    top:6%;
+    left: 29%;
+    width: 601px;
+    height: 70px;
   }
   .appimg {
     background-image: url("../img/app-1440.png");
