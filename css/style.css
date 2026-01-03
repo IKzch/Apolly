@@ -646,6 +646,14 @@
     width: 386px;
     height: 548px;
   }
+  .about .about__title{
+    width: 265px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 151%;
+    text-transform: uppercase;
+  }
   .about__block{
     margin-top: 30px;
     width: 570px;
@@ -1812,6 +1820,14 @@
   }
   .team__descr-desctop {
     display: inline;
+  }
+  .team__title{
+    width: 318px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 151%;
+    text-transform: uppercase;
   }
   .team__descr {
     width: 601px;
